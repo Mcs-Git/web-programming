@@ -8,10 +8,10 @@ function slider(property){
     introBackgrounds.style = property;
     console.log("ze")
 }
-prop.forEach(() => setTimeout("slider()",1000));
-setTimeout(slider('background: url("/images/dreamLifter-Bh5WgpvD.jpg")'),1000);
-setTimeout(slider('background: url("/images/airplane_background.jpg")'),2000);
-setTimeout(slider('background: url("/images/girlCardboat-DubbNzrn.jpg")',3000));
+// prop.forEach(() => setTimeout("slider()",1000));
+// setTimeout(slider('background: url("/images/dreamLifter-Bh5WgpvD.jpg")'),1000);
+// setTimeout(slider('background: url("/images/airplane_background.jpg")'),2000);
+// setTimeout(slider('background: url("/images/girlCardboat-DubbNzrn.jpg")',3000));
 
 
 
