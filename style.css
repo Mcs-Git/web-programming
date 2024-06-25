@@ -1,0 +1,1659 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+}
+
+header {
+    position: fixed;
+    height: fit-content;
+    background-color: white;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+header  #logo{
+    width: 95px;
+}
+header .logo{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
+}
+header .menu_bar{
+    display: none;
+}
+
+
+.text_title{
+    color: #337F38;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    width: max-content;
+    justify-items: center;
+    text-align: center;
+    padding-top: 32px;
+}
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-right: 25px;
+    gap: 25px;
+}
+.nav_bar a{
+    text-decoration: none;
+    color: #337F38;
+    width: auto;
+    display: block;
+    padding: 7px;
+    border-right: 10px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    border-radius: 4px;
+}
+.nav_bar p{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 7px;
+}
+.nav_bar .language{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+}
+.nav_bar .language svg{
+    width: 13px;
+    fill: #337F38;
+    margin-bottom: 5px;
+}
+.nav_bar a:hover , .home{
+    background-color: #337F38;
+    color: white;
+    border-radius: 4px;
+}
+.nav_bar a:hover{
+    opacity: 1;
+    background-color: #337F38;
+    transition: background-color 800ms ease-in-out;
+}
+.nav_bar .home{
+    background-color: #337F38;
+    color: white;
+    border-radius: 4px;
+}
+.nav_bar .france_flag {
+    width: 19px;
+    height: 15px;
+    border-radius: 2px;
+}
+.menu_bar_mobile{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    padding: 10px;
+    padding-left: 20px;
+    background-color: #337F38;
+    top: 75px;
+}
+.hide{
+    display: none;
+    
+}
+@keyframes drop {
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.dropIn{
+    animation: drop ease-in 500ms;
+
+}
+.menu_bar_mobile a{
+    text-decoration: none;
+    color: #F3F3F3;
+    text-align: left;
+    padding: 7px;
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+.menu_bar_mobile .language{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+}
+.menu_bar_mobile .france_flag{
+    width: 19px;
+    height: 15px;
+    border-radius: 2px;
+    margin-left: 8px;
+}
+.unitedKingdom_flag{
+    width: 15px;
+    height: 20px;
+    border-radius: 2px;
+    margin-left: 8px;
+}
+.menu_bar_mobile .language svg{
+    width: 13px;
+    height: auto;
+    fill: #F3F3F3;
+    margin-bottom: 5px;
+}
+
+
+.introduction{
+    overflow: hidden;
+    padding-top: 220px;
+    padding-bottom: 10px;
+    height: max-content;
+    background: url("/images/airplane_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.introduction p {
+    color: white;
+}
+.main_title{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    padding: 10px 35% 10px 35%;
+    margin-bottom: 20px;
+}
+.main_text{
+    font-size: 1.1rem;
+    text-align: center;
+    width: 100%;
+    padding: 10px 20% 10px 20%;
+    margin-bottom: 0px;
+    text-wrap: wrap;
+}
+.main_logo{
+    width: 300px;
+    height: 300px;
+    margin-top: -35px;
+}
+.main_Logo{
+    text-align: center;
+    padding-top: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+
+
+.below_introduction{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 5px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.below_introduction .feature_1{
+    width: 32%;
+    padding: 10px;
+}
+.below_introduction .block-1{
+    border-right: 3px solid #F3F3F3;
+    padding-top: 0;
+    height: 90px;
+}
+.below_introduction .tasks, .task_1{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    flex-wrap: nowrap;
+}
+.below_introduction .tasks .tasks_question{
+    text-transform: capitalize;
+    font-size: 0.6rem;
+    font-weight: 790;
+    width: fit-content;
+    padding: 6px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    border-left:  solid 3px #337F38;
+    background-color: #F3F3F3;
+}
+.below_introduction  .tasks_item{
+    text-transform: capitalize;
+    font-weight: 800;
+    width: 65%;
+    font-size: 1.5rem;
+}
+.below_introduction .tasks .tasks_logo, .service_logo-1{
+    margin-right: 20px;
+}
+.tasks_logo .ship_logo{
+    width: 27px;
+}
+.truck{
+    width: 30px;
+}
+.below_introduction .task_1 .service_1, .below_introduction .task_2 .service_2{
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    padding-left: 29px;
+    font-weight: 400;
+    width: fit-content;
+}
+.below_introduction  .feature_1{
+    padding-top: 0px;
+}
+.below_introduction  .service_text-1, .service_text-2{
+    text-wrap: wrap;
+    font-size: 0.7rem;
+    text-align: start;
+    color: #8A8A8A;
+    width: 68%;
+    padding-left: 30px;
+    padding-bottom: 0;
+}
+
+.below_introduction .task_1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.airplain_background{
+    background-image: url("/images/airplane_background.jpg");
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: auto;
+    height: 500px;
+}
+
+.on_us{
+    position: relative;
+    z-index: 1;
+    bottom: 100px;
+    right: 20%;
+    left: 17%;
+    width: 870px;
+    padding: 50px 0px 0px 39px;
+    background-color: white;
+}
+.on_us .tasks_question{
+    text-transform: capitalize;
+    font-size: 0.6rem;
+    font-weight: 790;
+    width: fit-content;
+    padding: 5px;
+    padding-right: 40px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 30px;
+    border-left:  solid 3px #337F38;
+    background-color: #F3F3F3;
+}
+.on_us .on_us-title{
+    font-weight: 800;
+    width: 40%;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.on_us .on_us-text{
+    text-wrap: wrap;
+    width: 290px;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #8A8A8A;
+    padding-bottom: 0;
+    margin: 10px 0 10px 0;
+}
+.on_us .on_us-task{
+    text-wrap: wrap;
+    font-weight: 800;
+    font-size: 0.7rem;
+    color: #337F38;
+    padding-top: 12px;
+}
+.on_us .on_us-image1{
+    position: absolute;
+    width: 29vw;
+    height: 15vw;
+    background: url("/images/newZeland-yHUdqA1x.jpg");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    top: 11%;
+    left: 52%;
+}
+.on_us .on_us-image2{
+    position: absolute;
+    width: 24vw;
+    height: 22vw;
+    background-color: white;
+    z-index: 2;
+    top: 42%;
+    padding: 20px;
+    right: 20.5%;
+}
+.on_us .on_us-image2 .card_truck{
+    width: 100%;
+    height: 100%;
+    margin-right: 200px;
+}
+.on_us .on_us-image2background{
+    padding: 50px;
+    background-color: white;
+    z-index: 1;
+}
+.on_us .task{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 8px;
+}
+.on_us .task .bill, .delivered{
+    background-color: #337F38;
+    border-radius: 100%;
+    padding: 8px 10px 8px 10px;
+}
+
+.on_us .task .bill svg, .house{
+    width: 16px;
+    fill: white;
+}
+
+
+.services{
+    margin-right: 20px;
+}
+.services .service_boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.services .service_title{
+    text-align: center;
+    color: #337F38;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.services .service_box{
+    width: 270px;
+    background-color: #8A8A8A;
+    padding: 225px 12px 20px 15px;
+    margin-bottom: 0px;
+}
+.service_box .servicebox_title-1{
+    font-size: 1rem;
+    font-weight: 800;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.service_box .servicebox_text-1{
+    font-size: 0.66rem;
+    font-weight: 450;
+    text-align: left;
+    color: white;
+}
+.services .green_background{
+    width: 100%;
+    padding: 120px;
+    background: linear-gradient(to right ,#3A8741,#6CB471);
+    z-index: -1;
+    position: relative;
+    bottom: 120px;
+    
+}
+.team {
+    position: relative;
+    bottom: 45px;
+    padding-bottom: 0px;
+
+}
+.team_Title{
+    display: flex;
+    justify-content: center;
+}
+.team .team_title{
+    width: fit-content;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 30px;
+    border-left:  solid 3px #337F38;
+    background-color: #F3F3F3;
+}
+.team .team_subtitle{
+    text-transform: uppercase;
+    color: #3A8741;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+}
+.team_members{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.team_members .member{
+    width: 280px;
+    padding-top: 290px;
+}
+
+.team_members  .first{
+    background: url("/images/alfred.jpg");
+    background-repeat: no-repeat;
+    background-size: 160%;
+    
+}
+.team_members  .second{
+    background: url("/images/yannick.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.team_members  .third{
+    background: url("/images/pierre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.team_members p{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+}
+.team_members .member_name{
+    font-size: 0.8rem;
+}
+.team_members .member_role{
+    background-color: #337F38;
+    padding: 20px;
+}
+
+
+
+.choice {
+    margin-top: 80px;
+    margin-bottom: 150px;
+    position: relative;
+    bottom: 55px;
+}
+.choice .backgrounds{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.choice .first_background{
+    width: 30%;
+    padding: 300px;
+    padding-bottom: 260px;
+    height: auto;
+    background-color: #3A8741;
+}
+.choice .second_background{
+    width: 70%;
+    padding: 100px 0px 70px 85px;
+    height: auto;
+    background-color: #F4F4F4;
+}
+.second_background .On_us{
+    width: fit-content;
+    text-transform: capitalize;
+    font-size: 0.6rem;
+    font-weight: 800;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-right: 30px;
+    border-left:  solid 3px #337F38;
+    background-color: #F4F4F4;
+}
+.second_background .second_background_title{
+    font-weight: 800;
+    width: 60%;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.second_background .second_background_text{
+    text-wrap: wrap;
+    font-size: 0.7rem;
+    font-weight: 450;
+    width: 330px;
+    color: #727272;
+    padding-bottom: 0;
+    margin: 10px 0 10px 0;
+}
+
+.second_background .services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+.second_background .services .service{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.service .bill, .clock{
+    background-color: #337F38;
+    border-radius: 100%;
+    padding: 7px 11px 6px 11px;
+}
+.service .delivered{
+    padding: 7px 12px 7px 12px;
+
+}
+
+
+
+.service .bill svg, .clock svg{
+    width: 16px;
+    fill: white;
+}
+
+.second_background .service .service_text{
+    text-wrap: wrap;
+    font-weight: 900;
+    font-size: 0.7rem;
+    color: #338352;
+    margin-right: 77px;
+    margin-top: 12px;
+}
+
+.choice .imageOn_backgrounds{
+    width: 52%;
+    padding: 225px;
+    background: url("/images/dreamLifter-Bh5WgpvD.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 73px;
+}
+.informations{
+    margin-left: 90px;
+    margin-bottom: 150px;
+}
+.informations .contact{
+    width: fit-content;
+    text-transform: capitalize;
+    font-size: 0.6rem;
+    font-weight: 800;
+    padding: 4px;
+    padding-right: 68px;
+    margin-bottom: 15px;
+    margin-right: 30px;
+    border-left:  solid 3px #337F38;
+    background-color: #F4F4F4;
+}
+.end_informations{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+
+.informations .contact_head{
+    display: flex;
+    justify-content: left;
+    margin-left: 110px;
+}
+
+.adresses .contact_title{
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-align: left;
+    width: fit-content;
+}
+.adresses .contact_text{
+    text-wrap: wrap;
+    width: 385px;
+    font-size: 0.7rem;
+    color: #8A8A8A;
+    padding-bottom: 0;
+    margin: 10px 0 10px 0;
+}
+.adresses .contacts_me{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    gap: 5px;
+}
+.adresses .mail_name, .adresses .meeting_time{
+    margin-top: 5px;
+}
+.contacts_me .email, .phone{
+    background-color: #337F38;
+    border-radius: 100%;
+    padding: 7px 9px 7px 9px;
+}
+.contacts_me  .phone{
+    background-color: #337F38;
+    border-radius: 100%;
+    padding: 8px 10px 1px 10px;
+}
+.contacts_me .email svg, .phone svg{
+    width: 15px;
+    fill: white;
+}
+.contacts_me .phone svg{
+    margin-top: 2px;
+}
+
+.adresses .contacts_me p{
+    font-weight: 800;
+    font-size: 0.6rem;
+    color: #338352;
+    margin-right: 90px;
+}
+
+form{
+    width: 49%;
+    padding: 0 30px 0 50px;
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+form .first_name, form .email, form .tel_number, form .town{
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #8A8A8A;
+    margin-bottom: 0px;
+    border-radius: 2px;
+}
+
+form #name,#tel, #city, #mail,#comments{
+    width: 100%;
+    padding: 12px 30px 12px 35px;
+    border-radius: 2px;
+    font-size: 0.7rem;
+}
+form .comments{
+    width: 86%;
+    border: 1px solid #8A8A8A;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+form #comments{
+    height: 100%;
+    padding: 30px 30px 25px 35px;
+}
+
+.name::placeholder, textarea::placeholder{
+    font-size: 0.7rem;
+    width: fit-content;
+    border: none;
+}
+form  #name, #tel, #city, #mail,#comments{
+    font-size: 0.7rem;
+    border: none;
+}
+form .first_name #name:focus{
+    border: 1px solid red;
+}
+form .button{
+    width: fit-content;
+}
+form .button #button{
+    font-size: 1rem;
+    background-color: #337F38;
+    border: none;
+    width: 150px;
+    padding: 8px;
+    font-weight: bold;
+    color: #F4F4F4;
+}
+
+
+
+footer .foot_background{
+    background: url("/images/shipCargo-CipUlxWw.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 290px;
+    padding-bottom: 0;
+    position: relative;
+
+}
+.foot_background .foot_logo{
+    color: white;
+    background-color: black;
+    padding-right: 172px;
+    padding-left: 25px;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    left: 245px;
+}
+.foot_background .foot_logo img{
+    width: 100px;
+    margin-bottom: 5px;
+}
+footer .contacts_me{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+footer .contacts_me p{
+    font-weight: 800;
+    font-size: 0.6rem;
+    color: #F4F4F4;
+    margin-right: 90px;
+}
+footer .contacts_me .email, footer .contacts_me .phone{
+    background-color: black;
+    border-radius: 0;
+    padding: 0;
+}
+footer .contacts_me .phone svg{
+    padding-top: 9px;
+}
+footer .contacts_me .email svg{
+    padding-top: 5px;
+}
+footer .contacts_me .position svg{
+    width: 12px;
+    fill: white;
+    padding-top: 4px;
+    margin-right: 2px;
+}
+footer .contacts_me div{
+    color: #F4F4F4;
+}
+
+footer .foot_flex{
+    background-color: black;
+    width: 100%;
+}
+footer .navigation_links{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    padding-top: 65px;
+    overflow: hidden;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-left: 25px;
+}
+footer .navigation_links a{
+    text-decoration: none;
+    color: white;
+    width: auto;
+    display: block;
+    padding: 0px 25px 0px 18px;
+    border-right: 1px solid #727272;
+    font-size: 0.7rem;
+}
+
+.navigation_links .social_medias{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 25px;
+}
+.navigation_links .social_medias .logo{
+    color: white;
+}
+.navigation_links .social_medias svg{
+    fill: white;
+    width: 14px;
+    padding-bottom: 5px;
+}
+
+footer .foot_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    gap: 120px;
+}
+footer  .copy_right{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #727272;
+    padding-top: 5px;
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+}
+footer section {
+    background-color: black;
+    padding-bottom: 30px;
+}
+footer .mobile{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+        width: 100vw;
+        padding-right: 37px;
+        padding-bottom: 0px;
+    }
+    header .menu_bar {
+        width: 22px;
+        align-self: center;
+        fill: #337F38;
+        display: block;
+        position: relative;
+        left: 20px;
+        top: 2px;
+    }
+    header  #logo{
+        width: 72px;
+    }
+    header .nav_bar{
+        display: none;
+    }
+    header .text_title{
+        font-size: 18px;
+        padding-top: 24px;
+        width: fit-content;
+    }
+    .introduction{
+        padding-top: 180px;
+    }
+    .below_introduction .tasks .tasks_question{
+        margin-left: 0;
+    }
+    .introduction .main_title{
+        font-size: 16px;
+        width: 80%;
+        padding: 0%;
+        align-self: center;
+        text-wrap: wrap;
+    }
+    .introduction .main_text{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        line-break: auto;
+        font-weight: 400;
+        padding: 0 6px 0 6px;
+        margin-bottom: 125px;
+    }
+    .below_introduction{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        padding-left: 10px;
+    }
+    .below_introduction .feature_1{
+        width: 100%;
+    }
+    .below_introduction .block-1{
+        border: none;
+    }
+    .below_introduction  .tasks_item{
+        font-size: 22px;
+    }
+    .below_introduction  .service_text-1, .service_text-2{
+        width: 85%;
+        text-align: center;
+        padding: 0;
+        margin-left: 0;
+    }
+    .below_introduction .task_1 .service_1, .below_introduction .task_2 .service_2{
+        text-align: center;
+        padding-right: 15px;
+        width: 85%;
+    }
+    .below_introduction .task_2 .logistic{
+        padding-right: 12px;
+    }
+    .airplain_background{
+        display: none;
+    }
+    .on_us{
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding-left: 20px;
+        padding-top: 0;
+        width: 100%;
+    }
+    .on_us .tasks_question{
+        margin-left: 0;
+    }
+    .on_us .on_us-title{
+        font-size: 16px;
+        width: 60%;
+    }
+    .on_us .on_us-image1, .on_us .on_us-image2background{
+        display: none;
+    }
+    .green_background{
+        display: none;
+    }
+    .team{
+        position: relative;
+        bottom: 0;
+        margin-top: 55px;
+    }
+    .team .team_subtitle{
+        font-size: 18px;
+        font-weight: 1000;
+        margin-bottom: 25px;
+    }
+    .choice{
+        margin-bottom: 30px;
+        position: relative;
+        bottom: 0;
+    }
+    .choice .imageOn_backgrounds, .choice .first_background{
+        display: none;
+    }
+    .choice .second_background{
+        width: 100%;
+        padding: 25px 0 170px  20px;
+    }
+    .choice .second_background_title{
+        font-size: 19px;
+        width: 80%;
+        font-weight: 1000;
+    }
+    .choice .second_background_text{
+        width: 80%;
+    }
+    .choice .services{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .informations{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 50px;
+        justify-content: left;
+        padding: 0;
+        padding-left: 20px;
+    }
+    .informations .contact_head{
+        margin-left: 0;
+
+    }
+    .informations .contact_text{
+        width: 80%;
+        text-wrap: wrap;
+    }
+    .informations .contact{
+        width: fit-content;
+        padding-right: 12px;
+    }   
+    .end_informations{
+        justify-content: left;
+    }
+    .informations .contact_title{
+        font-size: 23px;
+    }
+    .end_informations .adresses{
+        margin-bottom: 70px;
+    }
+    form{
+        width: 100%;
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 30px;
+        flex-direction: column;
+        margin-left: 0;
+        position: relative;
+        left: 0;
+    }
+    .formular  .first_name, .formular .email,.formular .tel_number,.formular .town,.formular .comments{
+        width: 100%;  
+    }
+    form .button{
+        align-self: center;
+    }
+    footer{
+        overflow: hidden;
+    }
+    footer .foot_background{
+        display: none;
+    }
+    footer .foot_logo img{
+        width: 75px;
+        margin-bottom: 0;
+    }
+    footer .foot_flex{
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+
+    }
+    footer .footer_items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .foot_logo{
+        display: flex;
+        justify-content:center ;
+    }
+    footer .navigation_links{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+        margin-left: 0;
+        padding-top: 0;
+        align-items: center;
+        width: 100%;
+
+    }
+    footer .contact_us{
+        margin-bottom: 0;
+        margin-left: 100px;
+        
+    }
+    footer .navigation_links p a{
+       margin-bottom: 10px;
+    }
+    footer .social_medias{
+        margin-top: 10px;
+        padding-right: 7px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .below_introduction .task_1{
+        margin: 0;
+        width: 105%;
+        flex-direction: row;
+        position: relative;
+        right: 10px;
+
+    }
+    .below_introduction .feature_1 .service_1{
+        width: fit-content;
+        padding-left: 40px;
+    }
+    .below_introduction .tasks_item{
+        width: 100%;
+    }
+    .below_introduction .task_2 .service_2{
+        padding-left: 10px;
+        text-wrap: nowrap;
+        width: 100%;
+    }
+    .below_introduction .task_2 .service_text-2{
+        margin-left: 10px;
+    }
+
+}
+@media screen and (width: 768px) {
+
+
+    header  #logo{
+        width: 125px;
+    }
+    header .logo{
+        gap: 0px;
+    }
+    
+    .text_title{
+        font-size: 1.5rem;
+        padding-top: 45px;
+        padding-left: 10px;
+    }
+    .nav_bar{
+        gap: 30px;
+    }
+    .nav_bar a{
+        display: block;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .nav_bar .language svg{
+        width: 20px;
+        margin-bottom: 9px;
+    }
+    
+    .nav_bar .france_flag{
+        width: 25px;
+        height: 19px;
+    }
+    
+    .introduction{
+        padding-top: 300px;
+        height: 900px;
+    }
+    .main_title{
+        font-size: 1.7rem;
+        font-weight: 900;
+        padding: 10px 27% 10px 27%;
+    }
+    .main_text{
+        font-size: 1.45rem;
+        padding: 10px 8% 10px 8%;
+    }
+    .main_logo{
+        width: 450px;
+        height: 500px;
+    }
+    
+    
+    
+    .below_introduction{
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        gap: 0px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .below_introduction .feature_1{
+        width: 39%;
+        padding: 10px 0 0 0;
+        border-right: 4px solid #F3F3F3;
+        margin-bottom: 30px;
+
+    }
+    .below_introduction .block-1-tablet{
+        border-right: 4px solid #F3F3F3;
+        padding-top: 0;
+        height: fit-content;
+    }
+    .below_introduction .block-2-tablet{
+        border-right: 4px solid #F3F3F3;
+        padding-top: 0;
+        height: fit-content;
+        width: 40%;
+    }
+    .below_introduction .task_2{
+        border: none;
+    }
+    .below_introduction .tasks, .task_1{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        flex-wrap: nowrap;
+    }
+    .below_introduction .tasks .tasks_question{
+        font-size: 0.85rem;
+        border-left:  solid 4px #337F38;
+        height: fit-content;
+
+    }
+    
+    .below_introduction .tasks .tasks_logo, .service_logo-1{
+        margin-right: 20px;
+    }
+    .tasks_logo .ship_logo{
+        width: 39px;
+    }
+    .truck{
+        width: 40px;
+        margin-right: 0px;
+    }
+    .below_introduction .task_1 .service_1, .below_introduction .task_2 .service_2{
+        margin-bottom: 18px;
+        padding-left: 29px;
+        font-weight: 400;
+        width: fit-content;
+    }
+    .below_introduction  .feature_1{
+        padding-top: 0px;
+    }
+    .below_introduction  .service_text-1, .service_text-2{
+        font-size: 0.9rem;
+        width: 88%;
+    }
+    
+    .below_introduction .task_1{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    
+    
+    .airplain_background{
+        background-position: 65% 35%;
+        height: 275px;
+    }
+    .on_us{
+        padding: 60px 0px 0px 50px;
+    }
+    .on_us .tasks_question{
+        font-size: 0.85rem;
+        border-left:  solid 4px #337F38;
+    }
+    .on_us .on_us-title{
+        width: 55%;
+    }
+    .on_us .on_us-text{
+        width: 380px;
+        font-size: 0.9rem;
+    }
+    .on_us .on_us-task{
+        font-size: 1rem;
+        align-self: center;
+        padding-top: 0;
+    }
+    .on_us .on_us-image1{
+        width: 350px;
+        height: 180px;
+        background-size: cover;
+        left: 66%;
+    }
+    .on_us .on_us-image2{
+        width: 335px;
+        height: 278px;
+        top: 36%;
+        padding: 14px;
+        right: 12%;
+    }
+    .on_us .on_us-image2 .card_truck{
+        width: 100%;
+        height: 100%;
+        margin-right: 200px;
+    }
+    .on_us .on_us-image2background{
+        padding: 50px;
+        background-color: white;
+        z-index: 1;
+    }
+    .on_us .task{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 8px;
+    }
+    .on_us .task .bill, .delivered{
+        padding: 15px 16px;
+    }
+    .on_us .task .bill svg, .house{
+        width: 22px;
+        margin-top: 5px;
+    }
+    
+    .services{
+        margin-right: 20px;
+        margin-top: 150px;
+        height: 870px;
+    }
+    .services .service_boxes{
+        gap: 30px;
+    }
+    .services .service_title{
+        font-weight: 900;
+        font-size: 1.6rem;
+        margin-bottom: 40px;
+    }
+    .services .service_box{
+        width: 400px;
+        padding: 350px 40px 35px 25px;
+        margin-bottom: 0px;
+    }
+    .service_box .servicebox_title-1{
+        font-size: 1.3rem;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    .service_box .servicebox_text-1{
+        font-size: 0.9rem;
+    }
+    .services .green_background{
+        padding: 150px;
+        background: linear-gradient(to right ,#3A8741,#6CB471);
+        bottom: 165px;
+        
+    }
+
+    .team {
+        position: relative;
+        bottom: 45px;
+        padding-bottom: 0px;
+    
+    }
+    .team_Title{
+        display: flex;
+        justify-content: center;
+    }
+    .team .team_title{
+        font-size: 0.87rem;
+        padding: 5px 8px 5px 8px;
+        border-left:  solid 4px #337F38;
+    }
+    .team .team_subtitle{
+        font-weight: bolder;
+        font-size: 1.6rem;
+        font-weight: 900;
+        margin-bottom: 50px;
+    }
+    .team_members{
+        gap: 35px;
+    }
+    .team_members .member{
+        width: 345px;
+        padding-top: 365px;
+    }
+    
+    .team_members p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .team_members .member_name{
+        font-size: 1.1rem;
+    }
+    .team_members .member_role{
+        padding: 21px;
+    }
+    
+    
+    
+    .choice {
+        margin-top: 80px;
+        margin-bottom: 100px;
+        position: relative;
+        bottom: 55px;
+    }
+    .choice .first_background{
+        width: 50%;
+        padding: 320px;
+        padding-bottom: 100px;
+        height: 600px;
+        background-color: #3A8741;
+    }
+    .choice .second_background{
+        width: 70%;
+        padding: 135px 0px 100px 105px;
+        height: 600px;
+    }
+    .second_background .On_us{
+        font-size: 0.87rem;
+        padding: 6px;
+        border-left:  solid 4px #337F38;
+    }
+    .second_background .second_background_title{
+        font-weight: 800;
+        width: 90%;
+        font-size: 1.65rem;
+        text-align: left;
+    }
+    .second_background .second_background_text{
+        text-wrap: wrap;
+        font-size: 1rem;
+        font-weight: 450;
+        width: 390px;
+        color: #727272;
+        padding-bottom: 0;
+        margin: 10px 0 10px 0;
+    }
+    
+    .second_background .services{
+        height: fit-content;
+        padding-right: 0;
+        gap: 15px;
+    }
+    .choice .services .bill, .choice .clock{
+        height: fit-content;
+        padding: 15px 14px 9px 14px;
+    }
+    .choice .delivered{
+        padding: 10px 15px 10px 15px;
+        height: fit-content;
+    
+    }
+    .service .bill svg, .service .clock svg{
+        width: 22px;
+    }
+    
+    .second_background .service .service_text{
+        font-size: 1rem;
+        margin-right: 60px;
+        margin-top: 14px;
+    }
+    .choice .imageOn_backgrounds{
+        width: 45%;
+        height: 400px;
+        padding: 170px;
+        background-size: cover;
+        background-position: right;
+        top: 100px;
+    }
+
+    .informations{
+        width: 100%;
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 25px;
+        margin-left: 0px;
+        margin-bottom: 150px;
+    }
+    .informations .contact{
+        font-size: 0.87rem;
+        padding: 6px;
+        border-left:  solid 4px #337F38;
+    }
+    .end_informations{
+        gap: 0;
+        justify-content: space-between;
+    }
+    
+    .informations .contact_head{
+        display: flex;
+        justify-content: left;
+        margin-left: 0px;
+    }
+
+    .adresses {
+        width: 33%;
+        padding: 0;
+    }
+    
+    .adresses .contact_title{
+        font-weight: 900;
+        font-size: 1.65rem;
+        text-align: left;
+        width: fit-content;
+    }
+    .adresses .contact_text{
+        text-wrap: wrap;
+        width: 385px;
+        font-size: 1rem;
+        padding-bottom: 0;
+        margin: 10px 0 10px 0;
+    }
+    .adresses .contacts_me{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+        gap: 10px;
+    }
+    .adresses .mail_name, .adresses .meeting_time{
+        margin-top: 8px;
+    }
+    .contacts_me .email,.contacts_me .phone, .contacts_me .clock{
+        padding: 15px 14px 9px 14px;
+
+    }
+    .contacts_me .email svg, .phone svg, .clock svg{
+        width: 22px;
+        fill: white;
+    }
+    .adresses .contacts_me p{
+        font-weight: 800;
+        font-size: 0.9rem;
+        color: #338352;
+        margin-right: 90px;
+    }
+    
+    form{
+        width: 60%;
+        padding: 0;
+        padding-top: 25px;
+    }
+    form .first_name, form .email, form .tel_number, form .town{
+        width: 286px;
+    }
+    
+    form #name,#tel, #city, #mail,#comments{
+        font-size: 0.9rem;
+    }
+    form .comments{
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .name::placeholder, textarea::placeholder{
+        font-size: 0.9rem;
+        
+    }
+    form .button #button{
+        font-size: 1.2rem;
+        width: 185px;
+    }
+    
+    
+    footer .foot_background{
+        padding: 290px;
+        padding-bottom: 0;
+        position: relative;
+    
+    }
+    .foot_background .foot_logo{
+        margin-top: 50px;
+        padding-right: 230px;
+        height: 125px;
+        bottom: 0;
+        left: 395px;
+    }
+    .foot_background .foot_logo img{
+        width: 150px;
+        margin-bottom: 0px;
+        overflow-y: hidden;
+        position: relative;
+        bottom: 25px;
+
+    }
+    footer .contacts_me{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-bottom: 25px;
+        gap: 25px;
+    }
+    footer .contacts_me p{
+        font-size: 0.9rem;
+        margin-right: 0px;
+    }
+   
+    footer .contacts_me .phone svg{
+        padding-top: 15px;
+    }
+    footer .contacts_me .email svg{
+        padding-top: 7px;
+    }
+    footer .contacts_me .position svg{
+        width: 16px;
+        padding-top: 6px;
+    }
+   
+    
+    
+    
+    footer .navigation_links a{
+        padding: 0px 25px 0px 8px;
+        font-size: 0.9rem;
+    }
+    
+    .navigation_links .social_medias{
+        gap: 25px;
+        padding-left: 8px;
+        height: fit-content;
+        position: relative;
+        bottom: 1px;
+    }
+    .navigation_links .social_medias svg{
+        width: 19px;
+    }
+    
+    footer  .copy_right{
+        font-size: 0.9rem;
+    }
+
+    body{
+        width: 132%;
+        overflow-x: hidden;
+        margin: 0;
+    }
+    .on_us{
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .choice .first_background{
+        width: 20%;
+        padding-right: 50px;
+    }
+
+}
