@@ -222,8 +222,9 @@ header .menu_bar{
 .below_introduction{
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    padding: 5px;
+    margin-left: 100px;
+    width: fit-content;
+    padding: 5px 0px 5px 55px;
     justify-content: space-evenly;
     flex-direction: row;
     margin-bottom: 50px;
@@ -260,6 +261,7 @@ header .menu_bar{
     font-weight: 800;
     width: 65%;
     font-size: 1.5rem;
+    margin-left: 5px;
 }
 .below_introduction .tasks .tasks_logo, .service_logo-1{
     margin-right: 20px;
@@ -285,7 +287,8 @@ header .menu_bar{
     font-size: 0.7rem;
     text-align: start;
     color: #8A8A8A;
-    width: 68%;
+    /* width: 68%; */
+    max-width: 280px;
     padding-left: 30px;
     padding-bottom: 0;
 }
@@ -304,18 +307,17 @@ header .menu_bar{
     background-repeat: no-repeat;
     width: 100%;
     padding: auto;
-    height: 500px;
+    height: 400px;
 }
 
 .on_us{
     position: relative;
     z-index: 1;
     bottom: 100px;
-    right: 20%;
-    left: 17%;
     width: 870px;
     padding: 50px 0px 0px 39px;
     background-color: white;
+    margin: 0 auto;
 }
 .on_us .tasks_question{
     text-transform: capitalize;
@@ -333,12 +335,13 @@ header .menu_bar{
 .on_us .on_us-title{
     font-weight: 800;
     width: 40%;
+    width: 400px;
     font-size: 1.5rem;
     text-align: left;
 }
 .on_us .on_us-text{
     text-wrap: wrap;
-    width: 290px;
+    width: 305px;
     font-weight: 400;
     font-size: 0.7rem;
     color: #8A8A8A;
@@ -354,24 +357,24 @@ header .menu_bar{
 }
 .on_us .on_us-image1{
     position: absolute;
-    width: 29vw;
-    height: 15vw;
+    width: 350px;
+    height: 290px;
     background: url("/images/newZeland-yHUdqA1x.jpg");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
-    top: 11%;
-    left: 52%;
+    top: 0%;
+    left: 55%;
 }
 .on_us .on_us-image2{
     position: absolute;
-    width: 24vw;
-    height: 22vw;
+    width: 300px;
+    height: 290px;
     background-color: white;
     z-index: 2;
     top: 42%;
     padding: 20px;
-    right: 20.5%;
+    right: 18%;
 }
 .on_us .on_us-image2 .card_truck{
     width: 100%;
@@ -542,7 +545,7 @@ header .menu_bar{
 }
 .choice .second_background{
     width: 70%;
-    padding: 100px 0px 70px 85px;
+    padding: 100px 0px 70px 100px;
     height: auto;
     background-color: #F4F4F4;
 }
@@ -614,7 +617,7 @@ header .menu_bar{
 }
 
 .choice .imageOn_backgrounds{
-    width: 52%;
+    width: 680px;
     padding: 225px;
     background: url("/images/dreamLifter-Bh5WgpvD.jpg");
     background-repeat: no-repeat;
@@ -622,10 +625,15 @@ header .menu_bar{
     position: absolute;
     top: 73px;
 }
+
 .informations{
     margin-left: 90px;
     margin-bottom: 150px;
+    border: 1px solid red;
+    height: 500px;
+    margin: 0 auto;
 }
+
 .informations .contact{
     width: fit-content;
     text-transform: capitalize;
@@ -634,22 +642,24 @@ header .menu_bar{
     padding: 4px;
     padding-right: 68px;
     margin-bottom: 15px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
     border-left:  solid 3px #337F38;
     background-color: #F4F4F4;
 }
 .end_informations{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    border: 1px solid red;
     gap: 0px;
 }
 
 .informations .contact_head{
+    flex: 1;
     display: flex;
     justify-content: left;
-    margin-left: 110px;
+    /* padding-left: 168px; */
 }
 
 .adresses .contact_title{
