@@ -6,6 +6,11 @@
     font-size: 1.1rem;
 }
 
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 header {
     position: fixed;
     height: fit-content;
