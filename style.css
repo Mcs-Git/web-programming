@@ -715,7 +715,7 @@ form{
     flex-wrap: wrap;
 }
 form .first_name, form .email, form .tel_number, form .town{
-    width: fit-content;
+    width: 230px;
     height: fit-content;
     border: 1px solid #8A8A8A;
     margin-bottom: 0px;
@@ -724,10 +724,11 @@ form .first_name, form .email, form .tel_number, form .town{
 }
 
 form #name,#tel, #city, #mail,#comments{
-    width: 230px;
+    width: 100%;
     padding: 12px 30px 12px 35px;
     border-radius: 2px;
     font-size: 0.7rem;
+    border: 1px solid #6CB471;
 }
 form .comments{
     width: 478px;
@@ -737,6 +738,7 @@ form .comments{
 }
 form #comments{
     height: 100%;
+    width: 100%;
     padding: 30px 30px 25px 35px;
 }
 
@@ -750,7 +752,7 @@ form  #name, #tel, #city, #mail,#comments{
     border: none;
 }
 form .first_name #name:focus{
-    border: 1px solid red;
+    border: 1px solid #6CB471;
 }
 form .button{
     width: fit-content;
