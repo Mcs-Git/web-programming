@@ -223,14 +223,16 @@ header .menu_bar{
     display: flex;
     flex-wrap: wrap;
     margin-left: 100px;
-    width: fit-content;
-    padding: 5px 0px 5px 55px;
+    width: 100%;
+    /* padding: 5px 0px 5px 55px; */
     justify-content: space-evenly;
     flex-direction: row;
+    margin: 0 auto;
     margin-bottom: 50px;
+    padding-left: 160px;
 }
 .below_introduction .feature_1{
-    width: 32%;
+    width: 33%;
     padding: 10px;
 }
 .below_introduction .block-1{
@@ -241,6 +243,7 @@ header .menu_bar{
 .below_introduction .tasks, .task_1{
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     width: auto;
     flex-wrap: nowrap;
 }
@@ -259,7 +262,7 @@ header .menu_bar{
 .below_introduction  .tasks_item{
     text-transform: capitalize;
     font-weight: 800;
-    width: 65%;
+    width: 250px;
     font-size: 1.5rem;
     margin-left: 5px;
 }
@@ -862,6 +865,7 @@ footer .navigation_links a{
 }
 .navigation_links .social_medias .logo{
     color: white;
+    cursor: pointer;
 }
 .navigation_links .social_medias svg{
     fill: white;
@@ -895,6 +899,7 @@ footer .mobile{
 }
 
 @media screen and (max-width: 767px) {
+    
     header{
         display: flex;
         flex-direction: row;
@@ -932,7 +937,7 @@ footer .mobile{
     }
     .introduction .main_title{
         font-size: 15px;
-        width: 100%;
+        width: 90%;
         padding: 0%;
         align-self: center;
         text-wrap: wrap;
@@ -947,35 +952,48 @@ footer .mobile{
         margin-bottom: 125px;
     }
     .below_introduction{
-        display: flex;
         width: 100%;
         flex-direction: column;
-        gap: 20px;
+        justify-content: space-between;
+        gap: 30px;
         padding: 0;
-        padding-left: 10px;
+        padding-left: 5px;
     }
     .below_introduction .feature_1{
         width: 100%;
+        
     }
     .below_introduction .block-1{
         border: none;
     }
     .below_introduction  .tasks_item{
         font-size: 22px;
+        margin-left: 0;
+        width: 100%;
+        word-spacing: -4px;
     }
     .below_introduction  .service_text-1, .service_text-2{
-        width: 85%;
+        max-width: 89.5%;
         text-align: center;
         padding: 0;
         margin-left: 0;
+        margin: 0;
     }
     .below_introduction .task_1 .service_1, .below_introduction .task_2 .service_2{
         text-align: center;
-        padding-right: 15px;
+        /* padding-right: 15px; */
         width: 85%;
     }
     .below_introduction .task_2 .logistic{
-        padding-right: 12px;
+        padding-right: 20px;
+        margin-right: 5px;
+        position: relative;
+        right: 0px;
+        overflow: hidden;
+        width: fit-content;
+    }
+    .below_introduction .task_1{
+        gap: 0px;
     }
     .airplain_background{
         display: none;
@@ -989,19 +1007,28 @@ footer .mobile{
         padding-left: 20px;
         padding-top: 0;
         width: 100%;
+        margin-bottom: 30px;
     }
     .on_us .tasks_question{
         margin-left: 0;
     }
     .on_us .on_us-title{
         font-size: 16px;
-        width: 60%;
+        width: 80%;
+    }
+    .on_us .on_us-text{
+        width: 250px;
     }
     .on_us .on_us-image1, .on_us .on_us-image2background{
         display: none;
     }
     .green_background{
         display: none;
+    }
+
+    
+    .services .service_box{
+        margin: 0 auto;
     }
     .team{
         position: relative;
@@ -1027,11 +1054,11 @@ footer .mobile{
     }
     .choice .second_background_title{
         font-size: 19px;
-        width: 80%;
+        width: 89%;
         font-weight: 1000;
     }
     .choice .second_background_text{
-        width: 80%;
+        width: 89%;
     }
     .choice .services{
         flex-direction: column;
@@ -1050,7 +1077,7 @@ footer .mobile{
 
     }
     .informations .contact_text{
-        width: 80%;
+        width: 85%;
         text-wrap: wrap;
     }
     .informations .contact{
@@ -1100,12 +1127,14 @@ footer .mobile{
         flex-direction: column;
         gap: 0;
         align-items: center;
+        
 
     }
     footer .footer_items{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
     }
     footer .foot_logo{
         display: flex;
@@ -1178,7 +1207,8 @@ footer .mobile{
         padding-left: 10px;
     }
     .nav_bar{
-        gap: 30px;
+        gap: 15px;
+        margin-bottom: 2px;
     }
     .nav_bar a{
         display: block;
@@ -1199,30 +1229,37 @@ footer .mobile{
     .introduction{
         padding-top: 300px;
         height: 900px;
+        width: 100%;
     }
     .main_title{
         font-size: 1.7rem;
         font-weight: 900;
-        padding: 10px 27% 10px 27%;
+        max-width: 600px;
+        /* padding: 10px 27% 10px 27%; */
     }
     .main_text{
         font-size: 1.45rem;
-        padding: 10px 8% 10px 8%;
+        max-width: 100%;
+        margin: 0 auto;
     }
     .main_logo{
         width: 450px;
         height: 500px;
     }
-    
+    .dropIn{
+        display: none;
+    }
     
     
     .below_introduction{
         display: flex;
         flex-wrap: wrap;
-        width: auto;
+        padding: 0;
+        width: 100%;
         gap: 0px;
         justify-content: center;
-        margin-bottom: 50px;
+        margin: 0 auto;
+        margin-bottom: 40px;
     }
     .below_introduction .feature_1{
         width: 39%;
@@ -1279,7 +1316,7 @@ footer .mobile{
     }
     .below_introduction  .service_text-1, .service_text-2{
         font-size: 0.9rem;
-        width: 88%;
+        max-width: 90%;
     }
     
     .below_introduction .task_1{
@@ -1294,17 +1331,18 @@ footer .mobile{
         height: 275px;
     }
     .on_us{
-        padding: 60px 0px 0px 50px;
+        padding: 60px 0px 0px 0px;
+        margin-left: 45px;
     }
     .on_us .tasks_question{
         font-size: 0.85rem;
         border-left:  solid 4px #337F38;
     }
     .on_us .on_us-title{
-        width: 55%;
+        width: 500px;
     }
     .on_us .on_us-text{
-        width: 380px;
+        width: 420px;
         font-size: 0.9rem;
     }
     .on_us .on_us-task{
@@ -1313,22 +1351,25 @@ footer .mobile{
         padding-top: 0;
     }
     .on_us .on_us-image1{
-        width: 350px;
+        top: 60px;
+        width: 330px;
         height: 180px;
         background-size: cover;
-        left: 66%;
+        left: 64%;
     }
     .on_us .on_us-image2{
-        width: 335px;
+        width: 315px;
         height: 278px;
-        top: 36%;
+        top: 37%;
         padding: 14px;
-        right: 12%;
+        right: 16%;
+        padding-right: 0;
+        padding-left: 0;
     }
     .on_us .on_us-image2 .card_truck{
-        width: 100%;
+        width: 80%;
         height: 100%;
-        margin-right: 200px;
+        margin-left: 43px;
     }
     .on_us .on_us-image2background{
         padding: 50px;
@@ -1450,24 +1491,32 @@ footer .mobile{
     }
     .second_background .second_background_title{
         font-weight: 800;
-        width: 90%;
-        font-size: 1.65rem;
+        width: 97%;
+        font-size: 1.5rem;
         text-align: left;
     }
     .second_background .second_background_text{
         text-wrap: wrap;
         font-size: 1rem;
         font-weight: 450;
-        width: 390px;
+        width: 420px;
         color: #727272;
         padding-bottom: 0;
         margin: 10px 0 10px 0;
     }
     
     .second_background .services{
-        height: fit-content;
+        height: 170px;
         padding-right: 0;
+        flex-direction: column;
+        justify-content: start;
         gap: 15px;
+        overflow: hidden;
+    }
+    .services .opt-3{
+        width: fit-content;
+        position: relative;
+        right: 65px;
     }
     .choice .services .bill, .choice .clock{
         height: fit-content;
@@ -1533,7 +1582,7 @@ footer .mobile{
     }
     .adresses .contact_text{
         text-wrap: wrap;
-        width: 385px;
+        width: 388px;
         font-size: 1rem;
         padding-bottom: 0;
         margin: 10px 0 10px 0;
@@ -1565,7 +1614,7 @@ footer .mobile{
     form{
         width: 60%;
         padding: 0;
-        padding-top: 25px;
+        padding-top: 55px;
     }
     form .first_name, form .email, form .tel_number, form .town{
         width: 286px;
@@ -1632,7 +1681,7 @@ footer .mobile{
         width: 16px;
         padding-top: 6px;
     }
-   
+  
     
     
     
