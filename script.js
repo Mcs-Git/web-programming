@@ -21,6 +21,29 @@ function toggleMenu (){
 }
 
 menu.addEventListener('click',toggleMenu) ;
+language.forEach(e => e.addEventListener('click',()=>{
+
+
+    let lang = localStorage.getItem('language')
+    if(lang == undefined){
+
+        localStorage.setItem('language', 'fr');
+    }
+    if(lang == 'fr'){
+        console.log(lang)
+        localStorage.setItem('language', 'en');
+    } else {
+        console.log(lang)
+        localStorage.setItem('language', 'fr');
+    }
+
+}) )
+
+
+
+
+
+
 language.forEach(e =>e.addEventListener("click",()=> 
 //     document.querySelector(".menu_bar_mobile").innerHTML = `
 //         <p><a href="index.html" class="">Home</a></p>
@@ -264,3 +287,5 @@ language.forEach(e =>e.addEventListener("click",()=>
 <p class="copy_right">Copy right © COTRAD SARL 2024</p>
         </footer>`
 ));
+
+
