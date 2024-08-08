@@ -2,6 +2,7 @@ const language = document.querySelectorAll(".drop_language");
 const menu = document.querySelector(".menu_bar");
 const dropMenu = document.querySelector(".menu_bar_mobile");
 const introBackgrounds = document.querySelector(".introduction");
+const border_animation = document.querySelector(".first_name");
 prop = ['background: url("/images/dreamLifter-Bh5WgpvD.jpg")','background: url("/images/airplane_background.jpg")','background: url("/images/girlCardboat-DubbNzrn.jpg")']
 
 function slider(property){
@@ -19,8 +20,16 @@ function toggleMenu (){
     dropMenu.classList.toggle("hide");
     dropMenu.classList.add("dropIn");
 }
+function border(){
+    border_animation.classList.add("border_animated");
+    console.log('succeeded');
+}
 
 menu.addEventListener('click',toggleMenu) ;
+
+border_animation.addEventListener('focus', border)
+
+
 language.forEach(e => e.addEventListener('click',()=>{
 
 
