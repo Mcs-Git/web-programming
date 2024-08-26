@@ -707,7 +707,7 @@ header .menu_bar{
     margin-right: 90px;
 }
 .contacts_me .phone_number{
-    border: 1px solid red;
+    color: #337F38;
 }
 form{
     width: 530px;
