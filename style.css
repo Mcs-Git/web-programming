@@ -1039,13 +1039,13 @@ footer .mobile{
         height: 700px;
     }
     .slides img{
-        height: 700px;
+        height: 650px;
         margin: 0 auto;
         position: relative;
     }
     .slider {
         overflow: hidden;
-        height: 650px;
+        height: 640px;
         
     }
     .below_introduction .tasks .tasks_question{
