@@ -23,13 +23,6 @@ function slider2(){
     console.log("ze");
 
 }
-// setInterval(slider,3000);
-// setInterval(slider2,2000);
-// slider();
-// prop.forEach(() => setTimeout("slider()",1000));
-// setTimeout(slider('background: url("/images/dreamLifter-Bh5WgpvD.jpg")'),1000);
-// setTimeout(slider('background: url("/images/airplane_background.jpg")'),2000);
-// setTimeout(slider('background: url("/images/girlCardboat-DubbNzrn.jpg")',3000));
 
 
 
