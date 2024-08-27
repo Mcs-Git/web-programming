@@ -4,12 +4,28 @@ const dropMenu = document.querySelector(".menu_bar_mobile");
 const introBackgrounds = document.querySelector(".introduction");
 const border_animation = document.querySelector(".first_name");
 const borde = document.querySelector("#name");
-prop = ['background: url("/images/dreamLifter-Bh5WgpvD.jpg")','background: url("/images/airplane_background.jpg")','background: url("/images/girlCardboat-DubbNzrn.jpg")']
+prop = ['url("/images/dreamLifter-Bh5WgpvD.jpg")','background: url("/images/airplane_background.jpg")','background: url("/images/girlCardboat-DubbNzrn.jpg")']
 
-function slider(property){
-    introBackgrounds.style = property;
-    console.log("ze")
+
+function slider(){
+    // introBackgrounds.style.background =  "none";
+    // console.log("ze");
+    // introBackgrounds.style.background =  prop[0];
+    document.querySelector(".slider").style.animation = "paused"
+    console.log("ze");
+
 }
+function slider2(){
+    // introBackgrounds.style.background =  "none";
+    // console.log("ze");
+    // introBackgrounds.style.background =  prop[0];
+    document.querySelector(".slider").style.animation = "3s  slider  forwards infinite"
+    console.log("ze");
+
+}
+// setInterval(slider,3000);
+// setInterval(slider2,2000);
+// slider();
 // prop.forEach(() => setTimeout("slider()",1000));
 // setTimeout(slider('background: url("/images/dreamLifter-Bh5WgpvD.jpg")'),1000);
 // setTimeout(slider('background: url("/images/airplane_background.jpg")'),2000);
