@@ -288,7 +288,7 @@ header .menu_bar{
 }
 .below_introduction .feature_1{
     width: 33%;
-    padding: 10px;
+    padding: 1px;
 }
 .below_introduction .block-1{
     border-right: 3px solid #F3F3F3;
@@ -317,7 +317,7 @@ header .menu_bar{
 .below_introduction  .tasks_item{
     text-transform: capitalize;
     font-weight: 800;
-    width: 250px;
+    width: 270px;
     font-size: 1.5rem;
     margin-left: 5px;
 }
@@ -712,6 +712,7 @@ header .menu_bar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 0px;
 }
 
 .adresses .contact_title{
