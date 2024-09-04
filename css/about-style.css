@@ -1,0 +1,77 @@
+main .introduction_about{
+    background: url("/images/pexels-tom-fisk-3057960.jpg");
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    padding-bottom: 145px;
+    padding-right: 0;
+}
+
+.introduction_about p{
+    color: white;
+    margin-left: 130px;
+}
+.introduction_about .about_us{
+    text-transform: capitalize;
+    font-size: 0.75rem;
+    width: fit-content;
+    padding: 6px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    border-left:  solid 4px #337F38;
+    background-color: rgb(51, 59, 60,0.5);
+}
+.introduction_about .about_us_title{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+footer .foot_background{
+    background: none;
+}
+footer .foot_background_about{
+    background-color: #F4F4F4;
+    padding: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    main .introduction_about{
+        padding-top: 250px;
+        padding-bottom: 250px;
+        padding-left: 98px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .introduction_about .about_us_title{
+        font-size: 1.1rem;
+    }
+    .introduction_about p{
+        margin-left: 0px;
+    }
+    
+}
+
+
+
+
+
+@media screen and (width: 768px) {
+    
+    main .introduction_about{
+        padding-top: 400px;
+        padding-bottom: 90px;
+    }
+    .introduction_about .about_us_title{
+        font-size: 3.5rem;
+    }
+    .introduction_about p{
+        margin-left: 160px;
+    }
+    .introduction_about .about_us{
+        font-size: 1rem;
+        
+    }
+    
+}
