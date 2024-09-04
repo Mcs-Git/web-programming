@@ -101,6 +101,7 @@ header .menu_bar{
     background-color: #337F38;
     color: white;
     border-radius: 4px;
+    transform: scale(1.2);
 }
 .nav_bar .france_flag {
     width: 19px;
