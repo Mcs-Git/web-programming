@@ -528,15 +528,11 @@ footer .foot_background_about{
     
 }
 
-/* @media screen and (width: 820px) and (max-width: 829px){
+@media screen and (width: 820px) and (max-width: 829px){
     .about-tasks{
         display: flex;
         flex-direction: row;
         justify-content: start;
-        flex-wrap: wrap; 
-        width: 100%;
-        gap: 50px;
-        grid-column: 1fr 1fr;
-        border: 1px solid red;
+        flex-wrap: wrap;
     }
-} */
+}
