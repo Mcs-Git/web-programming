@@ -458,13 +458,13 @@ footer .foot_background_about{
     .about-services .services_title{
         font-size: 1.4rem;
     }
-    .about-tasks{
+    /* .about-tasks{
         display: flex;
         flex-direction: row;
         justify-content: start;
         width: 100%;
         gap: 50px;
-    }
+    } */
     .service_text-2{
         padding: 0;
         max-width: 350px;
