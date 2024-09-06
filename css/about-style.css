@@ -390,7 +390,7 @@ footer .foot_background_about{
         padding-bottom: 90px;
     }
     .introduction_about .about_us_title{
-        font-size: 3.5rem;
+        font-size: 3.3rem;
     }
     .introduction_about p{
         margin-left: 160px;
@@ -414,12 +414,12 @@ footer .foot_background_about{
         align-items: center;
     }
     .head_titles .head_title-1{
-        font-size: 0.75rem;
+        font-size: 0.65rem;
         
     }
     
     .head_titles .head_title-2{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .head_director .director img{
@@ -434,11 +434,11 @@ footer .foot_background_about{
         width: 750px;
     }
     aside .adjusted_text{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         padding-right: 10px;
     }
     aside .engagment{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     aside .head_titles{
         display: flex;
@@ -452,10 +452,10 @@ footer .foot_background_about{
 
 
     .about-services .tasks_question{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .about-services .services_title{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .about-tasks{
         display: flex;
@@ -467,10 +467,10 @@ footer .foot_background_about{
     .service_text-2{
         padding: 0;
         max-width: 350px;
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
     .service_1{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         width: 250px;
     }
     .about-services{
@@ -496,21 +496,21 @@ footer .foot_background_about{
     }
 
     .testimony .testimony_title{
-        font-size: 1.05rem;
+        font-size: 0.95rem;
         font-weight: 300;
         padding-left: 25px;
     }
     .testimony .client_questions{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     .profil .profil_name{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .profil .profil_profession{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .testimony  .profil_feedback{
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 350;
     }
     .testimony .client_box{
