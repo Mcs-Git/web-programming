@@ -463,6 +463,8 @@ footer .foot_background_about{
         flex-direction: row;
         justify-content: start; */
         width: 100%;
+        padding-right: 10px;
+        flex-wrap: wrap;
         /* gap: 50px; */
     }
     .service_text-2{
