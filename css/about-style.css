@@ -15,7 +15,7 @@ main .introduction_about{
 }
 .introduction_about .about_us{
     text-transform: capitalize;
-    font-size: 0.75rem;
+    font-size: 0.75em;
     width: fit-content;
     padding: 6px;
     margin-bottom: 20px;
@@ -25,7 +25,7 @@ main .introduction_about{
 }
 .introduction_about .about_us_title{
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .head_director{
@@ -50,7 +50,7 @@ main .introduction_about{
 }
 .head_titles .head_title-1{
     color: black;
-    font-size: 0.65rem;
+    font-size: 0.65em;
     font-weight: bold;
     width: fit-content;
     padding: 6px;
@@ -63,7 +63,7 @@ main .introduction_about{
 
 .head_titles .head_title-2{
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.6em;
     margin-bottom: 10px;
 }
 
@@ -77,7 +77,7 @@ aside .head_words-1{
     flex-wrap: wrap;
 }
 aside .adjusted_text{
-    font-size: 0.8rem;
+    font-size: 0.8em;
     /* width: 470px; */
     width: 380px;
     text-align: left;
@@ -89,7 +89,7 @@ aside .engagment{
     padding: 20px;
     color: white;
     background-color: #307835;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     margin-top: 15px;
     margin-left: 10px;
 }
@@ -107,7 +107,7 @@ aside .engagment{
 }
 .about-services .tasks_question{
     text-transform: capitalize;
-    font-size: 0.75rem;
+    font-size: 0.75em;
     width: fit-content;
     padding: 5px;
     padding-right: 40px;
@@ -137,14 +137,14 @@ aside .engagment{
 }
 .about-services .services_title{
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     position: relative;
     right: 12px;
 }
 .service_text-2{
     padding: 0;
     max-width: 320px;
-    font-size: 0.76rem;
+    font-size: 0.76em;
 }
 .service_1{
     text-transform: uppercase;
@@ -184,7 +184,7 @@ aside .engagment{
 }
 .testimony .testimony_title{
     text-transform: capitalize;
-    font-size: 0.77rem;
+    font-size: 0.77em;
     width: fit-content;
     padding: 5px;
     padding-right: 40px;
@@ -196,7 +196,7 @@ aside .engagment{
 .testimony .client_questions{
     text-transform: capitalize;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.3em;
 }
 .testimony .profil{
     display: flex;
@@ -221,15 +221,15 @@ aside .engagment{
     display: block;
 }
 .profil .profil_name{
-    font-size: 0.75rem;
+    font-size: 0.75em;
     font-weight: bold;
 }
 .profil .profil_profession{
     font-weight: bold;
-    font-size: 0.64rem;
+    font-size: 0.64em;
 }
 .testimony  .profil_feedback{
-    font-size: 0.85rem;
+    font-size: 0.85em;
     font-weight: 350;
 }
 .testimony .clients .client-1{
@@ -284,7 +284,7 @@ footer .foot_background_about{
         justify-content: left;
     }
     .introduction_about .about_us_title{
-        font-size: 1.1rem;
+        font-size: 1.1em;
     }
     .introduction_about p{
         margin-left: 0px;
@@ -308,20 +308,20 @@ footer .foot_background_about{
         
     }
     .head_titles .head_title-1{
-        font-size: 0.6rem;
+        font-size: 0.6em;
         
     }
     
     .head_titles .head_title-2{
-        font-size: 1.15rem;
+        font-size: 1.15em;
     }
     aside .adjusted_text{
-        font-size: 0.7rem;
+        font-size: 0.7em;
         padding-right: 10px;
         width: 100%;
     }
     aside .engagment{
-        font-size: 0.8rem;
+        font-size: 0.8em;
         margin-top: 15px;
         margin-left: 0px;
         text-align: center;
@@ -344,7 +344,7 @@ footer .foot_background_about{
     .service_text-2{
         padding: 0;
         max-width: 100%;
-        font-size: 0.7rem;
+        font-size: 0.7em;
     }
     .service_building{
         display: flex;
@@ -390,13 +390,13 @@ footer .foot_background_about{
         padding-bottom: 90px;
     }
     .introduction_about .about_us_title{
-        font-size: 3.5rem;
+        font-size: 3.5em;
     }
     .introduction_about p{
         margin-left: 160px;
     }
     .introduction_about .about_us{
-        font-size: 1rem;
+        font-size: 1em;
         
     }
     
@@ -414,12 +414,12 @@ footer .foot_background_about{
         align-items: center;
     }
     .head_titles .head_title-1{
-        font-size: 0.75rem;
+        font-size: 0.75em;
         
     }
     
     .head_titles .head_title-2{
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     .head_director .director img{
@@ -434,11 +434,11 @@ footer .foot_background_about{
         width: 750px;
     }
     aside .adjusted_text{
-        font-size: 0.9rem;
+        font-size: 0.9em;
         padding-right: 10px;
     }
     aside .engagment{
-        font-size: 1.1rem;
+        font-size: 1.1em;
     }
     aside .head_titles{
         display: flex;
@@ -452,10 +452,10 @@ footer .foot_background_about{
 
 
     .about-services .tasks_question{
-        font-size: 1rem;
+        font-size: 1em;
     }
     .about-services .services_title{
-        font-size: 1.6rem;
+        font-size: 1.6em;
     }
     .about-tasks{
         display: flex;
@@ -467,10 +467,10 @@ footer .foot_background_about{
     .service_text-2{
         padding: 0;
         max-width: 350px;
-        font-size: 0.95rem;
+        font-size: 0.95em;
     }
     .service_1{
-        font-size: 1.3rem;
+        font-size: 1.3em;
         width: 250px;
     }
     .about-services{
@@ -495,21 +495,21 @@ footer .foot_background_about{
     }
 
     .testimony .testimony_title{
-        font-size: 1.15rem;
+        font-size: 1.15em;
         font-weight: 300;
         padding-left: 25px;
     }
     .testimony .client_questions{
-        font-size: 1.7rem;
+        font-size: 1.7em;
     }
     .profil .profil_name{
-        font-size: 1.1rem;
+        font-size: 1.1em;
     }
     .profil .profil_profession{
-        font-size: 0.8rem;
+        font-size: 0.8em;
     }
     .testimony  .profil_feedback{
-        font-size: 1.1rem;
+        font-size: 1.1em;
         font-weight: 350;
     }
     .testimony .client_box{
