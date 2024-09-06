@@ -94,12 +94,183 @@ aside .engagment{
     margin-left: 10px;
 }
 
+.about-services{
+    width: 100%;
+    padding: 50px;
+    padding-left: 120px;
+    padding-top: 65px;
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.about-services .tasks_question{
+    text-transform: capitalize;
+    font-size: 0.75rem;
+    width: fit-content;
+    padding: 5px;
+    padding-right: 40px;
+    margin-bottom: 15px;
+    border-left:  solid 4px #337F38;
+    background-color: #F3F3F3;
+    
+}
+
+.about-tasks{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 60px;
+    padding-top: 20px;
+}
+.about-tasks .service_building{
+    grid-column: 2/4;
+}
+/* .service_building .service_adjusted{
+    text-wrap: nowrap;
+} */
+.about-tasks .task_logo img{
+    width: 30px;
+    margin-bottom: 13px;
+}
+.about-services .services_title{
+    font-weight: 400;
+    font-size: 1.3rem;
+    position: relative;
+    right: 12px;
+}
+.service_text-2{
+    padding: 0;
+    max-width: 320px;
+    font-size: 0.76rem;
+}
+.service_1{
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    font-weight: 400;
+    width: fit-content;
+}
+.service_adjusted{
+    text-transform: none;
+}
+
+.team{
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+
+
+.testimony_section{
+    background-color: #F3F3F3;
+    padding: 65px;
+    margin-bottom: 100px;
+}
+.testimony{
+    
+    margin: 0 auto;
+    width: fit-content;
+}
+.testimony .testimony_header{
+    display: flex;
+    flex-direction: column;
+}
+.testimony .clients{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.testimony .testimony_title{
+    text-transform: capitalize;
+    font-size: 0.77rem;
+    width: fit-content;
+    padding: 5px;
+    padding-right: 40px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    border-left:  solid 4px #337F38;
+    background-color: #EEEEEE;
+}
+.testimony .client_questions{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.testimony .profil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+.profil .profil_logo{
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    border-radius: 25px;
+    border-top-right-radius: 27px;
+    position: relative;
+}
+.profil .profil_logo img{
+    width: 40px;
+    align-self: center;
+    position: relative;
+    bottom: 3px;
+    left: 0px;
+    display: block;
+}
+.profil .profil_name{
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.profil .profil_profession{
+    font-weight: bold;
+    font-size: 0.64rem;
+}
+.testimony  .profil_feedback{
+    font-size: 0.85rem;
+    font-weight: 350;
+}
+.testimony .clients .client-1{
+    background-color: #F3F3F3;
+}
+.clients .client-1 .profil_feedback{
+    color: #8D848C;
+}
+.testimony .clients .client-2{
+    background-color: #337F38;
+}
+.clients .client-2 p{
+    color: white;
+}
+.testimony .client_box{
+    max-width: 330px;
+    height: 300px;
+    padding: 30px;
+    background-color: #307835;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 15px;
+}
+.client_box .profil_evaluation{
+    width: 100px;
+    margin-top: 75px;
+}
+.client_box .star_adjusted{
+    margin-top: 96px;
+}
+
+
+
 footer .foot_background{
     background: none;
 }
 footer .foot_background_about{
     background-color: #F4F4F4;
-    padding: 100px;
+    height: 100px;
+    padding: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -156,7 +327,56 @@ footer .foot_background_about{
         text-align: center;
         width: 100%;
     }
-    
+    .about-services{
+        padding: 35px 10px;
+    }
+    .about-tasks{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .about-tasks div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .service_text-2{
+        padding: 0;
+        max-width: 100%;
+        font-size: 0.7rem;
+    }
+    .service_building{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .task_logo{
+        align-items: center;
+    }
+    .service_1{
+        text-align: center;
+        width: 100%;
+    }
+    .tasks_question{
+        position: relative;
+        left: 11px;
+    }
+    .services_title{
+        left: -1px;
+    }
+
+    .testimony_section{
+        padding: 40px 10px;
+    }
+    .testimony .clients{
+        padding: 0;
+    }
+    .testimony .client_box{
+        max-width: 100%;
+        margin: 0;
+        
+    }
 }
 
 
@@ -229,5 +449,77 @@ footer .foot_background_about{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+
+    .about-services .tasks_question{
+        font-size: 1rem;
+    }
+    .about-services .services_title{
+        font-size: 1.6rem;
+    }
+    .about-tasks{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 100%;
+        gap: 50px;
+    }
+    .service_text-2{
+        padding: 0;
+        max-width: 350px;
+        font-size: 0.95rem;
+    }
+    .service_1{
+        font-size: 1.3rem;
+        width: 250px;
+    }
+    .about-services{
+        padding-left: 160px;
+        padding-bottom: 130px;
+    }
+    .task_adjusted{
+        position: relative;
+        top: 6px;
+    }
+    .about-tasks .task_logo img{
+        width: 40px;
+        margin-bottom: 13px;
+    }
+    .about-services .tasks_question{
+        position: relative;
+        right: 8px;
+    }
+    .about-services .services_title{
+        position: relative;
+        right: 23px;
+    }
+
+    .testimony .testimony_title{
+        font-size: 1.15rem;
+        font-weight: 300;
+        padding-left: 25px;
+    }
+    .testimony .client_questions{
+        font-size: 1.7rem;
+    }
+    .profil .profil_name{
+        font-size: 1.1rem;
+    }
+    .profil .profil_profession{
+        font-size: 0.8rem;
+    }
+    .testimony  .profil_feedback{
+        font-size: 1.2rem;
+        font-weight: 350;
+    }
+    .testimony .client_box{
+        height: auto;
+    }
+    .client_box .star_adjusted{
+        margin-top: 130px;
+    }
+    /* .testimony_section{
+        padding: 80px 100px;
+    } */
     
 }
