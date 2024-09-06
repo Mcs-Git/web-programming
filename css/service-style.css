@@ -6,3 +6,124 @@ main .introduction_about{
 .about-services{
     background-color: white;
 }
+
+.work{
+    width: 100%;
+    padding: 60px;
+    background-color: #EEEEEE;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+}
+.work .work_section{
+    display: flex;
+    width: fit-content;
+    gap: 100px;
+    margin: 0 auto;
+}
+.work .how_work{
+    text-transform: capitalize;
+    font-size: 0.85rem;
+    width: fit-content;
+    padding: 13px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border-left:  solid 3px #337F38;
+    background-color: #D2D2D2;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.work .image_slided{
+    position: relative;
+}
+.work .image_slided .image_slide-1 img{
+    position: relative;
+    max-width: 450px;
+    max-height: 290px;
+}
+.work .image_slided .image_slide-2{
+    position: absolute;
+    max-width: 200px;
+    height: 100px;
+    padding: 102px;
+    background-color: white;
+    top: 245px;
+    left: 260px;
+}
+.work .image_slided .image_slide-2 img{
+    position: absolute;
+    top: 45px;
+    left: 30px;
+    max-width: 205px;
+    height: 160px;
+}
+
+
+
+
+.all_services{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 25px;
+    gap: 40px;
+}
+.all_services .service_option{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: top;
+    max-width: 350px;
+    gap: 20px;
+}
+.all_services .service_logo img{
+    width: 30px;
+}
+
+.service_description .service_description_title{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.service_description .service_description_text{
+    font-size: 0.71rem;
+    color: #8D848C;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 767px){
+    .work{
+        padding:  0;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .work .work_section {
+        flex-direction: column;
+    }
+    .work .image_slided .image_slide-1 img{
+        max-width: 100%;
+        max-height: auto;
+    }
+    .work .image_slided .image_slide-2{
+        display: none;
+    }
+    .all_services{
+        width: 100%;
+        padding: 0;
+        left: 0;
+
+    }
+    .all_services .service_option{
+        max-width: 94%;
+        padding: 0;
+        padding-left: 10px;
+    }
+    .service_description .service_description_text{
+        text-align: left;
+    }
+    .service_description .service_description_title{
+        text-align: center;
+        text-wrap: nowrap;
+        font-size: 0.9rem;
+    }
+}
