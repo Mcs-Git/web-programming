@@ -459,13 +459,13 @@ footer .foot_background_about{
         font-size: 1.4rem;
     }
     .about-tasks{
-        /* display: flex;
+        display: flex;
         flex-direction: row;
-        justify-content: start; */
+        justify-content: start;
         width: 100%;
         padding-right: 10px;
         flex-wrap: wrap;
-        /* gap: 50px; */
+        gap: 20px;
     }
     .service_text-2{
         padding: 0;
@@ -528,15 +528,15 @@ footer .foot_background_about{
     
 }
 
-@media screen and (width: 820px) and (max-width: 829px){
+/* @media screen and (width: 820px) and (max-width: 829px){
     .about-tasks{
-        /* display: flex;
+        display: flex;
         flex-direction: row;
         justify-content: start;
-        flex-wrap: wrap; */
+        flex-wrap: wrap; 
         width: 100%;
         gap: 50px;
         grid-column: 1fr 1fr;
         border: 1px solid red;
     }
-}
+} */
