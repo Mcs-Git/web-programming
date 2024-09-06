@@ -459,11 +459,11 @@ footer .foot_background_about{
         font-size: 1.4rem;
     }
     .about-tasks{
-        display: flex;
+        /* display: flex;
         flex-direction: row;
         justify-content: start;
+        flex-wrap: wrap; */
         width: 100%;
-        flex-wrap: wrap;
         gap: 30px;
     }
     .service_text-2{
