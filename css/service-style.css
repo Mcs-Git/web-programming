@@ -6,10 +6,6 @@ main .introduction_about{
 .about-services{
     background-color: white;
 }
-.about-tasks{
-    justify-content: space-between;
-
-}
 
 .work{
     width: 100%;
@@ -132,3 +128,10 @@ main .introduction_about{
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .about-tasks{
+        grid-area: 40px;
+    
+    }
+    
+}
