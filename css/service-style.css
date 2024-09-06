@@ -6,6 +6,10 @@ main .introduction_about{
 .about-services{
     background-color: white;
 }
+.about-tasks{
+    justify-content: space-between;
+
+}
 
 .work{
     width: 100%;
@@ -127,3 +131,4 @@ main .introduction_about{
         font-size: 0.9rem;
     }
 }
+
