@@ -1,0 +1,8 @@
+main .introduction_about{
+    background: url("/images/24177.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.about-services{
+    background-color: white;
+}
