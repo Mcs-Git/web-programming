@@ -464,19 +464,20 @@ footer .foot_background_about{
         justify-content: start;
         width: 100%;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 30px;
     }
     .service_text-2{
         padding: 0;
-        max-width: 350px;
+        max-width: 300px;
         font-size: 0.75rem;
+        text-wrap: wrap;
     }
     .service_1{
         font-size: 1.1rem;
         width: 250px;
     }
     .about-services{
-        padding-left: 160px;
+        padding-left: 135px;
         padding-bottom: 130px;
         padding-right: 0;
     }
