@@ -537,5 +537,6 @@ footer .foot_background_about{
         width: 100%;
         gap: 50px;
         grid-column: 1fr 1fr;
+        border: 1px solid red;
     }
 }
