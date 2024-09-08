@@ -1,0 +1,269 @@
+main .introduction_about{
+    background: url("/images/airplane_background.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.box_form{
+    max-width: 600px;
+    background-color: #327D37;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 55px 0;
+    margin-bottom: 100px;
+}
+
+
+.informations{
+    margin-bottom: 0px;
+}
+
+.informations .contact{
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-right: 8px;
+    border-left:  solid 4px black;
+    margin: 0 auto;
+}
+
+
+.informations .contact_head{
+    margin-bottom: 10px;
+}
+
+.adresses .contact_title{
+    font-size: 1.15rem;
+    color: white;
+    margin: 0 auto;
+}
+.adresses .contact_text{
+    width: fit-content;
+    font-size: 0.75rem;
+    color: white;
+    text-align: center;
+}
+.adresses .contacts_me{
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 5px;
+    margin: 0 auto;
+    
+}
+
+
+.box_form .all_contacts{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.box_form .contacts_me .email, .box_form .contacts_me  .phone , .box_form .contacts_me  .clock{
+    border-radius: 0;
+    margin: 0 auto;
+}
+
+
+.adresses .mail_name, .adresses .meeting_time{
+    margin-top: 0px;
+}
+.contacts_me .email, .phone{
+    background-color: #337F38;
+}
+
+.contacts_me .email svg, .contacts_me .phone svg{
+    width: 16px;
+    fill: white;
+}
+.contacts_me .phone svg{
+    margin-top: 0px;
+    width: 16px;
+}
+.contacts_me .number_adjusted{
+    padding-top: 8px;
+}
+
+.adresses .contacts_me p{
+    font-size: 0.65rem;
+    color: white;
+    margin-right: 0px;
+}
+
+
+
+
+.form{
+    padding-top: 35px;
+    margin: 0 auto;
+    width: 100%;
+}
+form{
+    padding: 0px;
+    justify-content: center;
+    margin:  0 auto;
+}
+
+form .first_name, form .email, form .tel_number, form .town{
+    height: fit-content;
+    border: 1px solid white;
+}
+
+form #name,#tel, #city, #mail,#comments{
+    background-color: #327E37;
+}
+form .comments{
+    border: 1px solid white;
+}
+
+
+#name::placeholder,#tel::placeholder, #city::placeholder, #mail::placeholder,#comments::placeholder{
+    color: white;
+}
+
+
+
+
+
+
+
+form .button{
+    width: fit-content;
+}
+form .button #button{
+    font-size: 1.1rem;
+    font-weight: 30px;
+    background-color: white;
+    border: none;
+    width: 170px;
+    color: #337F38;
+}
+form .button {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .block_page{
+        padding: 0 10px;
+    }
+    .box_form{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+    }
+    .box_form .all_contacts{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .informations{
+        padding: 0;
+    }
+    form{
+        gap: 5px;
+    }
+    .form{
+        padding-top: 0;
+        position: relative;
+        bottom: 30px;
+    }
+    form .comments{
+        margin-top: 25px;
+    }
+    form .button #button{
+        font-size: 0.8rem;
+        font-weight: 450;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: fit-content;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .block_page{
+        padding: 30px;
+        overflow: hidden;
+    }
+    .box_form{
+        max-width: 820px;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 150px;
+    }
+    .informations .contact{
+        font-size: 1.1rem;
+    }
+    .informations .contact_head{
+        width:800px;
+    }
+    
+    
+    
+    .adresses .contact_title{
+        font-size: 1.5rem;
+        width: 800px;
+        text-align: center;
+    }
+    .adresses .contact_text{
+        width: 800px;
+        font-size: 1.1rem;
+        color: white;
+        text-align: center;
+    }
+
+
+    .box_form .all_contacts{
+        width: 800px;
+        padding: 0 130px;
+    }
+    
+    .contacts_me .email svg, .contacts_me .clock svg{
+        width: 25px;
+    }
+    .contacts_me .phone svg{
+        width: 23px;
+    }
+    .adresses .contacts_me p{
+        font-size: 0.9rem;
+    }
+    
+
+    form{
+        width: 700px;
+    }
+    
+    
+    form .first_name, form .email, form .tel_number, form .town{
+        height: fit-content;
+        border: 1px solid white;
+        font-size: 1rem;
+        width: 341px;
+    }
+    
+    
+    #name::placeholder,#tel::placeholder, #city::placeholder, #mail::placeholder,#comments::placeholder{
+        font-size: 1rem;
+        font-weight: 400;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    form .button #button{
+        font-size: 1.4rem;
+        font-weight: 30px;
+        background-color: white;
+        border: none;
+        width: 200px;
+        color: #337F38;
+    }
+    form .button {
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
