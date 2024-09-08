@@ -121,11 +121,10 @@ form .comments{
     color: white;
 }
 
-
-
-
-
-
+form input,textarea{
+    color: white;
+    font-size: 1.7rem;
+}
 
 form .button{
     width: fit-content;
@@ -246,13 +245,13 @@ form .button {
         font-weight: 400;
         
     }
+    form input,textarea{
+        font-size: 1rem;
+    }
     
     .form .comments{
         width: 100%;
     }
-    
-    
-    
     
     
     form .button #button{
