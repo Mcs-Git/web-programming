@@ -133,5 +133,8 @@ main .introduction_about{
         grid-area: 40px;
     
     }
-    
+    .work .work_section{
+        gap: 55px;
+    }
+
 }
