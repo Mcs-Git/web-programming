@@ -784,12 +784,11 @@ form input, textarea {
 }
 form .first_name, form .email, form .tel_number, form .town{
     width: 230px;
-    height: 44px;
+    height: fit-content;
     border: 1px solid #8A8A8A;
     margin-bottom: 0px;
     border-radius: 2px;
     margin-top: 12px;
-    transition: border 3s ease-in;
 }
 
 form #name,#tel, #city, #mail,#comments{
@@ -820,20 +819,8 @@ form #comments{
     margin-left: 200px;
     border: none;
 }
-@keyframes border_animation {
-    from{
-        border: none;
-        transform: border 2s;
-    }
-    to{
-        border: 3px solid #6CB471;
-        transform: border 3000ms;
 
-    }
-}
-.border_animated{
-    animation: border_animation 3000ms ease-in;
-}
+
 .bored {
     border: 3px solid #6CB471;
 }
@@ -841,18 +828,9 @@ form  #name, #tel, #city, #mail,#comments{
     font-size: 0.7rem;
     border: none;
 }
-form #mail:focus ~ form .email{
-    border: 3px solid #6CB471;
-    transform: scaleX(3);
-}
 
-form .first_name{
-    transition: all 300ms ease-in;
-}
-form .first_name.focused{
-    border: 3px solid #6CB471;
-    transform: scaleX(3);
-}
+
+
 form .button{
     width: fit-content;
 }
