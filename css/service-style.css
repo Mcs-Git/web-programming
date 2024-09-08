@@ -132,7 +132,15 @@ main .introduction_about{
     
     }
     .work .work_section{
-        gap: 55px;
+        gap: 50px;
     }
-
+    .work .image_slided .image_slide-1 img{
+        max-width: 365px;
+        height: 800px;
+    }
+    .work .image_slided .image_slide-2{
+        top: 245px;
+        left: 170px;
+    }
+    
 }
