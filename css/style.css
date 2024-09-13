@@ -15,7 +15,6 @@
 
 header {
     position: fixed;
-    overflow: hidden;
     height: fit-content;
     background-color: white;
     z-index: 3;
@@ -1245,6 +1244,8 @@ footer .mobile{
         padding-top: 0;
         align-items: center;
         width: 100%;
+        overflow-x: hidden;
+        padding-right: 15px;
 
     }
     footer .contact_us{
