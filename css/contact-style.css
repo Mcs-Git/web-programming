@@ -171,8 +171,8 @@ form .button {
     form .button #button{
         font-size: 0.8rem;
         font-weight: 450;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
         width: fit-content;
         margin-top: 15px;
     }
